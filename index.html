@@ -118,6 +118,11 @@
         left: -30px;
       }
 
+      footer .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+      }
       footer {
         color: #000;
         background-image: linear-gradient(
@@ -130,19 +135,20 @@
         background-repeat: no-repeat;
         padding: 130px 0;
         margin: 10px;
+        box-shadow: var(--box-shadow);
       }
 
-      footer .grid-3 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px;
-      }
       footer h7 {
         font-weight: 900;
       }
       footer .learn-more {
         position: relative;
         right: -33px;
+      }
+      footer li {
+        list-style: none;
+        margin-left: auto;
+        line-height: 2;
       }
       footer p {
         color: #000;
@@ -212,6 +218,17 @@
           position: relative;
           left: -30px;
           padding-top: 10px;
+        }
+        footer .grid-3 {
+          grid-template-columns: 1fr;
+          padding: 20px 30px 20px 30px;
+        }
+        footer .learn-more {
+          position: relative;
+          right: -0.2rem;
+        }
+        footer li {
+          margin-left: -30px;
         }
       }
     </style>
@@ -397,20 +414,23 @@
         <div>
           <h7 class="learn-more">Learn More</h7>
           <ul>
-            <a
-              href="https://en.wikipedia.org/wiki/Pecan_pie"
-              target="_blank"
-              class="links"
-              >wikipedia</a
-            >
-          </ul>
-          <ul>
-            <a
-              href="https://www.youtube.com/watch?v=a_GANJFyJ4U"
-              target="_blank"
-              class="links"
-              >Recipe Video</a
-            >
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Pecan_pie"
+                target="_blank"
+                class="links"
+                >wikipedia</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=a_GANJFyJ4U"
+                target="_blank"
+                class="links"
+                >Recipe Video</a
+              >
+            </li>
           </ul>
         </div>
         <div>
