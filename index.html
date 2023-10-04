@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="This website is about my favorite food during the fall season, pecan pie"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6eae258bbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pecan Pie Recipe</title>
+    <style>
+      :root {
+        --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        --primary-color: #f5f5dc;
+        --secondary-color: #f8f8f8;
+        --third-color: #ff6f3c;
+        --fourth-color: #daeae7;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--primary-color);
+      }
+      header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/953/original/pecan-pie.jpeg?1696412686);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 220px 0;
+        margin: 10px;
+        box-shadow: var(--box-shadow);
+      }
+      header h1,
+      h4 {
+        position: relative;
+        bottom: -160px;
+        color: #fff;
+      }
+      header h1 {
+        font-size: 70px;
+        text-transform: uppercase;
+      }
+      header h4 {
+        font-size: 15px;
+        position: relative;
+        left: -230px;
+        color: #bfd0cd;
+      }
+      header i,
+      a {
+        color: var(--third-color);
+        text-decoration: none;
+        font-size: 12px;
+      }
+      main section {
+        padding: 30px 50px 0 50px;
+        margin: 0 10px;
+      }
+      main .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 50px;
+        background-color: #fff;
+        padding-bottom: 15px;
+      }
+      main p {
+        line-height: 2.5;
+        opacity: 0.7;
+      }
+      .ingredients {
+        background-color: var(--fourth-color);
+        box-shadow: var(--box-shadow);
+        border-radius: 5px;
+        padding: 20px;
+      }
+      main .instructions {
+        background-color: var(--secondary-color);
+        padding-bottom: 15px;
+      }
+      main h6 {
+        font-weight: 800;
+        text-decoration: underline;
+      }
+      main i {
+        color: var(--third-color);
+      }
+      main h5 {
+        font-weight: 900;
+      }
+
+      main .grid-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #fff;
+      }
+      .nutri-info {
+        position: relative;
+        left: -30px;
+      }
+
+      footer {
+        color: #000;
+        background-image: linear-gradient(
+            rgba(245, 245, 220, 0.8),
+            rgba(245, 245, 220, 0.8)
+          ),
+          url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/057/original/pecan-pie-2.jpeg?1696459253);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 150px 0;
+        margin: 10px;
+      }
+      footer a {
+        color: #000;
+      }
+      @media (max-width: 960px) {
+        header {
+          padding: 80px 0;
+        }
+        header h1 {
+          font-size: 30px;
+          position: relative;
+          top: 70px;
+        }
+        header h4 {
+          font-size: 10px;
+          position: relative;
+          top: 70px;
+          left: -60px;
+        }
+        header i,
+        a {
+          font-size: 7px;
+        }
+        main .grid {
+          grid-template-columns: 1fr;
+          grid-gap: 10px;
+        }
+        main p {
+          line-height: 1.5;
+          font-size: 12px;
+        }
+        main .ingredients {
+          font-size: 10px;
+        }
+        main h6 {
+          font-size: 10px;
+        }
+        main li {
+          font-size: 13px;
+        }
+        main .grid-2 {
+          font-size: 13px;
+        }
+        main .nutri-info {
+          position: relative;
+          left: -30px;
+          padding-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Homemade Pecan Pie</h1>
+      <h4>
+        <i class="fa-solid fa-circle-down">
+          <a href="#instructions">START </a>
+        </i>
+        • 60 MINUTES • 8 SERVES • MODERATE
+      </h4>
+    </header>
+    <main>
+      <section class="grid">
+        <div>
+          <p>
+            Pecan pie has deep roots in American culinary history, with its
+            origins dating back to the 19th century in the Southern United
+            States. The combination of pecans, a native North American nut, and
+            syrup or molasses from African influences created this beloved
+            dessert. Its popularity grew in the early 20th century, and it
+            became a staple of Southern cuisine. Pecan pie's association with
+            the fall and holiday season can be attributed to the pecan harvest,
+            which typically occurs in the autumn months. The rich, buttery
+            filling and the warm, toasty flavor of the pecans make it a
+            comforting and indulgent dessert, perfectly suited for festive
+            gatherings and celebrations during the fall and holiday season. Its
+            sweet, nutty goodness has made it a cherished addition to
+            Thanksgiving and Christmas tables across the country.
+          </p>
+        </div>
+        <div class="ingredients">
+          <h5>Ingredients</h5>
+
+          <h6>For the Pie Crust:</h6>
+          <i class="fa-regular fa-square-check"></i>
+          1 1/4 cups all-purpose flour
+          <br />
+          <i class="fa-regular fa-square-check"></i>
+          1/2 teaspoon salt
+          <br />
+          <i class="fa-regular fa-square-check"></i> 1/2 cup (1stick) unsalted
+          butter, cold and diced
+          <br />
+          <i class="fa-regular fa-square-check"></i> 2-4 tablespoons ice water
+          <br />
+          <br />
+          <h6>For the Pecan Filling:</h6>
+
+          <i class="fa-regular fa-square-check"></i> 1 cup granulated sugar
+          <br />
+          <i class="fa-regular fa-square-check"></i> 3large eggs
+          <br />
+          <i class="fa-regular fa-square-check"></i> 1 cup corn syrup
+          <br />
+          <i class="fa-regular fa-square-check"></i> 2 tablespoons melted butter
+          <br />
+          <i class="fa-regular fa-square-check"></i> 1 tablespoon vanilla
+          extract
+          <br />
+          <i class="fa-regular fa-square-check"></i> 1 1/2 cups pecan halves
+        </div>
+      </section>
+      <section id="instructions" class="instructions">
+        <h5>Instructions:</h5>
+        <br />
+        <h6>For the Pie Crust:</h6>
+
+        <li>In a large mixing bowl, combine the all-purpose flour and salt.</li>
+        <li>Add the cold, diced butter to the flour mixture.</li>
+        <li>
+          Use a pastry cutter or your fingers to blend the butter into the flour
+          until it resembles coarse crumbs.
+        </li>
+        <li>
+          Gradually add ice water, one tablespoon at a time, and mix until the
+          dough starts to come together. You may not need all of the water.
+        </li>
+        <li>
+          Form the dough into a ball, wrap it in plastic wrap, and refrigerate
+          for at least 30 minutes.
+        </li>
+        <li>Preheat your oven to 350°F (175°C).</li>
+        <li>
+          Roll out the pie crust on a floured surface to fit a 9-inch pie dish.
+          Carefully transfer the crust to the pie dish and trim any excess dough
+          hanging over the edges.
+        </li>
+        <br />
+        <h6>For the Pecan Filling:</h6>
+        <li>
+          In a mixing bowl, whisk together the sugar and eggs until well
+          combined.
+        </li>
+        <li>
+          Add the corn syrup, melted butter, and vanilla extract. Mix until
+          smooth.
+        </li>
+        <li>Arrange the pecan halves in the bottom of the pie crust.</li>
+        <li>Pour the filling mixture evenly over the pecans.</li>
+        <br />
+        <h6>Baking the Pie:</h6>
+        <li>Place the pie on a baking sheet to catch any spills.</li>
+        <li>
+          Bake in the preheated oven for 50-60 minutes or until the pie is set
+          and a toothpick inserted into the center comes out clean. You may need
+          to cover the edges of the pie crust with foil halfway through to
+          prevent over-browning.
+        </li>
+        <li>
+          Remove the pie from the oven and let it cool completely on a wire
+          rack.
+        </li>
+      </section>
+      <section class="grid-2">
+        <h5>Nutrition Values (Approximate per serving):</h5>
+        <br />
+        <br />
+        <div class="nutri-info">
+          <ul>
+            Calories:
+          </ul>
+          <ul>
+            Total Fat:
+          </ul>
+          <ul>
+            Saturated Fat:
+          </ul>
+          <ul>
+            Cholesterol:
+          </ul>
+          <ul>
+            Sodium:
+          </ul>
+          <ul>
+            Total Carbohydrates:
+          </ul>
+          <ul>
+            Dietary Fiber:
+          </ul>
+          <ul>
+            Sugars:
+          </ul>
+          <ul>
+            Protein:
+          </ul>
+        </div>
+        <div class="nutri-info">
+          <ul>
+            450-500
+          </ul>
+          <ul>
+            26-30g
+          </ul>
+          <ul>
+            9-11g
+          </ul>
+          <ul>
+            80-100mg
+          </ul>
+          <ul>
+            250-300mg
+          </ul>
+          <ul>
+            55-60g
+          </ul>
+          <ul>
+            2-3g
+          </ul>
+          <ul>
+            45-50g
+          </ul>
+          <ul>
+            4-5g
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="grid-3">
+        <div>
+          <h7>Learn More</h7>
+          <ul>
+            <a href="https://en.wikipedia.org/wiki/Pecan_pie" target="_blank"
+              >wikipedia</a
+            >
+          </ul>
+          <ul>
+            <a
+              href="https://www.youtube.com/watch?v=a_GANJFyJ4U"
+              target="_blank"
+              >Recipe</a
+            >
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
