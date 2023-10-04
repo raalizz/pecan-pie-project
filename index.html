@@ -128,12 +128,47 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 150px 0;
+        padding: 130px 0;
         margin: 10px;
       }
-      footer a {
-        color: #000;
+
+      footer .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
       }
+      footer h7 {
+        font-weight: 900;
+      }
+      footer .learn-more {
+        position: relative;
+        right: -33px;
+      }
+      footer p {
+        color: #000;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.7;
+      }
+
+      footer .links {
+        color: #ff6f3c;
+        font-size: 15px;
+      }
+      footer .links:hover {
+        text-decoration: underline;
+      }
+      footer .icons {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding: 0 7px;
+        transition: all 200ms ease-in-out;
+      }
+      footer .icons:hover {
+        transform: scale(1.2);
+      }
+
       @media (max-width: 960px) {
         header {
           padding: 80px 0;
@@ -360,9 +395,12 @@
     <footer>
       <section class="grid-3">
         <div>
-          <h7>Learn More</h7>
+          <h7 class="learn-more">Learn More</h7>
           <ul>
-            <a href="https://en.wikipedia.org/wiki/Pecan_pie" target="_blank"
+            <a
+              href="https://en.wikipedia.org/wiki/Pecan_pie"
+              target="_blank"
+              class="links"
               >wikipedia</a
             >
           </ul>
@@ -370,9 +408,70 @@
             <a
               href="https://www.youtube.com/watch?v=a_GANJFyJ4U"
               target="_blank"
-              >Recipe</a
+              class="links"
+              >Recipe Video</a
             >
           </ul>
+        </div>
+        <div>
+          <h7>About This Site</h7>
+          <p>
+            The site was developed using a combination of HTML and CSS. It was
+            created as part of a monthly challenge for SheCodes to develop my
+            coding skills.
+          </p>
+
+          <p>
+            View the
+            <a
+              href="https://github.com/raalizz/pecan-pie-project"
+              target="_blank"
+              class="links"
+              >Source Code</a
+            >
+          </p>
+        </div>
+        <div>
+          <h7>About The Developer</h7>
+          <p>
+            Hi! My name is Raghda and I designed this webpage as a way to
+            enhance my expertise in crafting responsive landing pages featuring
+            more intricate layouts.
+          </p>
+          <br />
+          <div>
+            <a href="https://github.com/raalizz" title="Github" target="_blank">
+              <i class="fa-brands fa-github icons" style="color: #ff6f3c"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/raghdaalizz"
+              title="Linkedin"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin icons" style="color: #ff6f3c">
+              </i>
+            </a>
+            <a href="mailto:raalizz.h@gmail.com" title="Email">
+              <i class="fa-solid fa-envelope icons" style="color: #ff6f3c"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/raghda.alizz"
+              title="Instagram"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-instagram icons"
+                style="color: #ff6f3c"
+              ></i>
+            </a>
+            <a
+              href="https://raghda-alizz-alshaikhli.netlify.app/"
+              target="_blank"
+              title="My Portfolio"
+            >
+              <i class="fa-regular fa-user icons" style="color: #ff6f3c"></i
+            ></a>
+          </div>
         </div>
       </section>
     </footer>
